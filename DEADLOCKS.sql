@@ -7,7 +7,7 @@
 				         --=====================
 
 
-T1: b
+T1: 
 
 Select * from TableOne
 Select * from TableTwo
