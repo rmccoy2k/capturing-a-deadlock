@@ -20,7 +20,7 @@ UPDATE TableOne
 SET FNAME = 'MARY'
 WHERE ID = 	1
 
-/*When executing this update, it is blocked cuz T2 has exclusive 
+/*When executing this update, it is blocked because T2 has exclusive 
   lock (X) on TableTwo */
 
 BEGIN TRAN
@@ -45,7 +45,7 @@ UPDATE TableTwo
 SET FNAME = 'RANDOLPH'
 WHERE ID = 	1
 
---When executing this update, it is blocked cuz T2 has exclusive lock (X) on TableOne
+--When executing this update, it is blocked because T2 has exclusive lock (X) on TableOne
 
 BEGIN TRAN
 UPDATE TableOne 
